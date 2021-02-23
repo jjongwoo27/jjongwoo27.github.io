@@ -1,5 +1,5 @@
 ---
-category : Project
+categories : [Project]
 
 ---
 Face Mask Detection
