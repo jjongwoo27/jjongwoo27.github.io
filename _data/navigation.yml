@@ -2,13 +2,8 @@
 main:
   - title: "Recents"
   - title: "Categories"
-  - title: "Tags"
+    url : /categories/
   
-
-docs:
-  - title: "Machine Learning"
-  - title: "Industrial Engineering:
-    
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
