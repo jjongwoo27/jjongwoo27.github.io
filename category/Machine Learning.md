@@ -3,6 +3,6 @@
 layout: category
 
 title: Machine Learning
-permalink: /blog/categories/Machine Learning/
+permalink: /:categories/:machine-learning/
 
 ---
