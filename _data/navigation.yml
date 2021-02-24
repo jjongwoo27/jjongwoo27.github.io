@@ -6,10 +6,9 @@ main:
   
 
 docs:
-  - title: Machine Learning
-    children:
-      - title : "Machine Learning"
-        url : /categories/machine-learning/
+  - title: "Machine Learning"
+  - title: "Industrial Engineering:
+    
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
