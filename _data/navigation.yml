@@ -6,14 +6,10 @@ main:
   
 
 docs:
-  - title : "Machine Learning"
-    url : /categories/machine-learning/
-  - title : "Industrial Engineering"
-    url : /categories/industrial-engineering/
-  - title : "Backend"
-    url : /categories/backend/
-  - title : "Finance"
-    url : /categories/finance/
+  - title: Machine Learning
+    children:
+      - title : "Machine Learning"
+        url : /categories/#machine-learning/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
