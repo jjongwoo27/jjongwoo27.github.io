@@ -8,8 +8,6 @@ type: note
 
 ---
 
-# Toy Project : Face Mask Detection
-
 # 주제 선정
 
 - 주제 : **Face Mask Detection** ([https://github.com/chandrikadeb7/Face-Mask-Detection](https://github.com/chandrikadeb7/Face-Mask-Detection))
@@ -143,7 +141,7 @@ out = torchvision.utils.make_grid(inputs)
 imshow(out, title=[class_names[x] for x in classes])
 ```
 
-![assets/pic/face-mask-detection1.png](assets/pic/face-mask-detection1.png)
+![face-mask-detection1.png](/assets/pic/face-mask-detection1.png)
 
 ## Training Model
 
@@ -351,9 +349,9 @@ def computeTestSetAccuracy(model, loss_criterion):
 
 - Result
 
-![assets/pic/face-mask-detection-result1.png](assets/pic/face-mask-detection-result1.png)
+![face-mask-detection-result1.png](/assets/pic/face-mask-detection-result1.png)
 
-![assets/pic/face-mask-detection-result2.png](assets/pic/face-mask-detection-result2.png)
+![face-mask-detection-result2.png](/assets/pic/face-mask-detection-result2.png)
 
 - Prediction
 
