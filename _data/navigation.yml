@@ -4,6 +4,17 @@ main:
   - title: "Backend"
   - title: "Industrial Engineering"
   - title: "Finance"
+docs:
+  - title : Machine Learning
+    url : /docs/machine-learning
+  - title : Industrial Engineering
+    url : /docs/industrial-engineering
+  - title : Backend
+    url : /docs/backend
+  - title : Finance
+    url : /docs/finance
+  - title : Project
+    url : /docs/project
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
