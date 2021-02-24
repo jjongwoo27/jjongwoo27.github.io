@@ -5,15 +5,15 @@ main:
   - title: "Tags"
 docs:
   - title : "Machine Learning"
-    url : /docs/machine-learning
+    childeren:
+      - title : "Deep Learning Zero To All"
+        url : /docs/machine-learning/
   - title : "Industrial Engineering"
-    url : /docs/industrial-engineering
+    url : /docs/industrial-engineering/
   - title : "Backend"
-    url : /docs/backend
+    url : /docs/backend/
   - title : "Finance"
-    url : /docs/finance
-  - title : "Project"
-    url : /docs/project
+    url : /docs/finance/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
