@@ -3,6 +3,6 @@
 layout: category
 
 title: Industrial Engineering
-permalink: /:categories/:industrial-engineering/
+permalink: /categories/industrial-engineering/
 
 ---
