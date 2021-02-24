@@ -1,8 +1,8 @@
 # main links
 main:
   - title: "Machine Learning"
-  - title: "Industrial Engineering"
   - title: "Backend"
+  - title: "Industrial Engineering"
   - title: "Finance"
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
