@@ -3,6 +3,6 @@
 layout: category
 
 title: Finance
-permalink: /:categories/:finance/
+permalink: /categories/finance/
 
 ---
