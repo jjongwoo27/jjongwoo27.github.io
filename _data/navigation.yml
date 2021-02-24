@@ -4,15 +4,15 @@ main:
   - title: "Categories"
   - title: "Tags"
 docs:
-  - title : Machine Learning
+  - title : "Machine Learning"
     url : /docs/machine-learning
-  - title : Industrial Engineering
+  - title : "Industrial Engineering"
     url : /docs/industrial-engineering
-  - title : Backend
+  - title : "Backend"
     url : /docs/backend
-  - title : Finance
+  - title : "Finance"
     url : /docs/finance
-  - title : Project
+  - title : "Project"
     url : /docs/project
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
