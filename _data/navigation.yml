@@ -9,7 +9,7 @@ docs:
   - title: Machine Learning
     children:
       - title : "Machine Learning"
-        url : /categories/#machine-learning/
+        url : /category/machine-learning/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
