@@ -3,6 +3,6 @@
 layout: category
 
 title: Backend
-permalink: /:categories/:backend/
+permalink: /categories/backend/
 
 ---
