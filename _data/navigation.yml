@@ -1,9 +1,8 @@
 # main links
 main:
-  - title: "Machine Learning"
-  - title: "Backend"
-  - title: "Industrial Engineering"
-  - title: "Finance"
+  - title: "Recents"
+  - title: "Categories"
+  - title: "Tags"
 docs:
   - title : Machine Learning
     url : /docs/machine-learning
