@@ -7,14 +7,16 @@ type: note
 
 
 ---
-
+ 
+<br/>
 # 주제 선정
 
 - 주제 : **Face Mask Detection** ([https://github.com/chandrikadeb7/Face-Mask-Detection](https://github.com/chandrikadeb7/Face-Mask-Detection))
 - Datasets : 4095 images (with_mask, without_mask)
 - CNN과 Transfer Learning을 활용하여 Image Classification 진행
 - 참고 : [https://pytorch.org/tutorials/beginner/transfer_learning_tutorial.html](https://pytorch.org/tutorials/beginner/transfer_learning_tutorial.html)
-
+ 
+<br/>
 # Training Process
 
 ## Data Preprocessing
@@ -388,7 +390,8 @@ def predict(model, test_image_name):
 - Etc.
     - Learning Rate, Weight Decay를 바꾸어 보았는데 오히려 더 accuracy가 떨어졌다.
     - NLLLoss대신 BCELoss를 적용해보았는데 오히려 더 accuracy가 떨어졌다.
-
+ 
+<br/>
 # 느낀 점
 
 - 이미지를 직접 받아서 처음부터 끝까지 직접 학습을 시켜본 건 처음이었다. 튜토리얼이 있었고 이를 바탕으로 우리 팀원들과 같이 진행했었는데 다음에는 혼자서 이미지를 직접 크롤링하여 데이터를 처리해보고 싶다.
