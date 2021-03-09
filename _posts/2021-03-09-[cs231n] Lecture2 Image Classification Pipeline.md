@@ -60,7 +60,7 @@ def predict(model, test_images):
 
 $$d_{1}(I_{1}, I_{2})=\sum_{p}|I^{p}_{1}-I^{p}_{2}|$$
 
-![Lecture2%20Image%20Classification%20Pipeline%20e859e71ff43143ea833ec76a1aab93bd/L1_distance.png](Lecture2%20Image%20Classification%20Pipeline%20e859e71ff43143ea833ec76a1aab93bd/L1_distance.png)
+![L1_distance.png](/assets/pic/Lecture2 Image Classification Pipeline/L1_distance.png)
 
 - **2 distance (Euclidean)** : generic, don't know actually mean
 
