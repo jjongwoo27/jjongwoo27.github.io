@@ -8,7 +8,7 @@ type: note
 
 
 ---
-# 
+
 # Image Classification : A core task in Computer Vision
 
 - An image in computer : just a big grid of numbers between [0, 225] (3D arrays, RGB)
@@ -22,7 +22,8 @@ type: note
 - Occlusion : only see part of objects
 - Background Clutter : foreground could be actually quite similar in appearance to the object
 - Intraclass Variation : objects come in different shape, sizes and colors etc..
-# 
+
+
 # An Image Classifier
 
 - There is no obvious way to hard-core algorithm for recognizing objects
@@ -48,7 +49,8 @@ def predict(model, test_images):
 	# Use model to predict labels
 	return test_labels
 ```
-# 
+
+
 # Nearest Neighbor
 
 - Memorize all data and labels
@@ -58,13 +60,10 @@ def predict(model, test_images):
 
 - Use **L1 distance (Manhattan)** : input feature in vector have some important meaning
 
-$$d_{1}(I_{1}, I_{2})=\sum_{p}|I^{p}_{1}-I^{p}_{2}|$$
-
 ![L1_distance.png](/assets/pic/Lecture2 Image Classification Pipeline/L1_distance.png)
 
 - **L2 distance (Euclidean)** : generic, don't know actually mean
 
-$$d_{1}(I_{1}, I_{2})=\sqrt{\sum_{p}(I^{p}_{1}-I^{p}_{2})^{2}}$$
 
 ## Implementation in Python
 
@@ -103,7 +102,8 @@ class NearestNeighbor
 - N examples → Train : O(1), Predict O(N) → fast at training, slow for prediction
 - **We want classifiers that are fast at prediction; slow for training**
 - **Nearest Neighbor → not suitable for image classifier**
-# 
+
+
 # K-Nearest Neighbors
 
 - Instead of copying label from nearest neighbor, take majority vote from K closest points (majority vote)
@@ -119,7 +119,8 @@ class NearestNeighbor
 - Very slow at test time
 - Distance metrics on pixels are not informative for measuring the perceptual similarity
 - Curse of dimensionality (exponential growth in computation when expanding dimension)
-# 
+
+
 # Setting Hyperparameters
 
 ![setting_hyperparameter_1.png](/assets/pic/Lecture2 Image Classification Pipeline/setting_hyperparameter_1.png)
@@ -131,7 +132,8 @@ class NearestNeighbor
 ![setting_hyperparameter_2.png](/assets/pic/Lecture2 Image Classification Pipeline/setting_hyperparameter_2.png)
 
 - Idea #4 : likely to find optimal parameter(time-consuming method)  → used for small data
-# 
+
+
 # Linear Classification
 
 - Linear Classification : basic building block of neural network
