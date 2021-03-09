@@ -62,7 +62,7 @@ $$d_{1}(I_{1}, I_{2})=\sum_{p}|I^{p}_{1}-I^{p}_{2}|$$
 
 ![L1_distance.png](/assets/pic/Lecture2 Image Classification Pipeline/L1_distance.png)
 
-- **2 distance (Euclidean)** : generic, don't know actually mean
+- **L2 distance (Euclidean)** : generic, don't know actually mean
 
 $$d_{1}(I_{1}, I_{2})=\sqrt{\sum_{p}(I^{p}_{1}-I^{p}_{2})^{2}}$$
 
@@ -109,7 +109,7 @@ class NearestNeighbor
 - Instead of copying label from nearest neighbor, take majority vote from K closest points (majority vote)
 - **Hyperparameter** : value of K,  Distance Metric(, Voting), **parameters selected by the algorithm rather than learning from training data** → try them all and see what works better
 
-![Lecture2%20Image%20Classification%20Pipeline%20e859e71ff43143ea833ec76a1aab93bd/k_nearest.png](Lecture2%20Image%20Classification%20Pipeline%20e859e71ff43143ea833ec76a1aab93bd/k_nearest.png)
+![k_nearest.png](/assets/pic/Lecture2 Image Classification Pipeline/k_nearest.png)
 
 - L1(Manhattan) distance : follow coordinate axis, depends on your choice of coordinate system
 - L2(Euclidean) distance : not care about coordinate axis (naturally)
@@ -122,7 +122,7 @@ class NearestNeighbor
 
 # Setting Hyperparameters
 
-![Lecture2%20Image%20Classification%20Pipeline%20e859e71ff43143ea833ec76a1aab93bd/setting_hyperparameter_1.png](Lecture2%20Image%20Classification%20Pipeline%20e859e71ff43143ea833ec76a1aab93bd/setting_hyperparameter_1.png)
+![setting_hyperparameter_1.png](/assets/pic/Lecture2 Image Classification Pipeline/setting_hyperparameter_1.png)
 
 - Idea #1, #2 : poor performance on new data that was not in training data
 - Idea #3 : Validation set is used to measure the accuracy without knowing label → can be checked from data that has never been seen before
@@ -137,7 +137,7 @@ class NearestNeighbor
 - Linear Classification : basic building block of neural network
 - Parametric Approach
 
-![Lecture2%20Image%20Classification%20Pipeline%20e859e71ff43143ea833ec76a1aab93bd/Linear.png](Lecture2%20Image%20Classification%20Pipeline%20e859e71ff43143ea833ec76a1aab93bd/Linear.png)
+![Linear.png](/assets/pic/Lecture2 Image Classification Pipeline//Linear.png)
 
 - 3072 : the numbers of pixels, 10 : the numbers of classes
 - image → stretch pixels into column → inner product with weight, add bias → show similarity between templates for the class and the pixels of images (template matching)
@@ -147,4 +147,4 @@ class NearestNeighbor
 - Only learning one template for each class → low accuracy of complex models like neural networks
 - Hard classes for a linear classifier → Linear classifier makes a line that separate each class from the rest and views the image as a point in high-dimensional space
 
-![Lecture2%20Image%20Classification%20Pipeline%20e859e71ff43143ea833ec76a1aab93bd/hard_case_linear.png](Lecture2%20Image%20Classification%20Pipeline%20e859e71ff43143ea833ec76a1aab93bd/hard_case_linear.png)
+![hard_case_linear.png](/assets/pic/Lecture2 Image Classification Pipeline/hard_case_linear.png)
