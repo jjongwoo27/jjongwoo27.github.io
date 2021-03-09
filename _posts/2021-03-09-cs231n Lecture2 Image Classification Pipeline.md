@@ -8,7 +8,8 @@ type: note
 
 
 ---
-
+<br/>
+ 
 # 1. Image Classification : A core task in Computer Vision
 
 - An image in computer : just a big grid of numbers between [0, 225] (3D arrays, RGB)
@@ -23,7 +24,8 @@ type: note
 - Background Clutter : foreground could be actually quite similar in appearance to the object
 - Intraclass Variation : objects come in different shape, sizes and colors etc..<br/>
 
-
+<br/>
+ 
 # 2. Image Classifier
 
 - There is no obvious way to hard-core algorithm for recognizing objects
@@ -50,7 +52,8 @@ def predict(model, test_images):
 	return test_labels
 ```
 
-
+<br/>
+ 
 # 3. Nearest Neighbor
 
 - Memorize all data and labels
@@ -103,7 +106,8 @@ class NearestNeighbor
 - **We want classifiers that are fast at prediction; slow for training**
 - **Nearest Neighbor → not suitable for image classifier**
 
-
+<br/>
+ 
 # 4. K-Nearest Neighbors
 
 - Instead of copying label from nearest neighbor, take majority vote from K closest points (majority vote)
@@ -120,7 +124,8 @@ class NearestNeighbor
 - Distance metrics on pixels are not informative for measuring the perceptual similarity
 - Curse of dimensionality (exponential growth in computation when expanding dimension)
 
-
+<br/>
+ 
 # 5. Setting Hyperparameters
 
 ![setting_hyperparameter_1.png](/assets/pic/Lecture2 Image Classification Pipeline/setting_hyperparameter_1.png)
@@ -133,7 +138,8 @@ class NearestNeighbor
 
 - Idea #4 : likely to find optimal parameter(time-consuming method)  → used for small data
 
-
+<br/>
+ 
 # 6. Linear Classification
 
 - Linear Classification : basic building block of neural network
