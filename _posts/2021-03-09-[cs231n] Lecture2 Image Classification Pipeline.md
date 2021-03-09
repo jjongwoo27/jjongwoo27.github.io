@@ -1,4 +1,13 @@
-# Lecture2 : Image Classification Pipeline
+---
+
+date: 2021-03-09 08:30:00 +0900
+categories : [Machine Learning]
+tags: [Study]
+type: note
+
+
+
+---
 
 # Image Classification : A core task in Computer Vision
 
