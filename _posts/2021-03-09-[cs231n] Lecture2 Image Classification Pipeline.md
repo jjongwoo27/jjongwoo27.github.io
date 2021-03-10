@@ -8,6 +8,7 @@ type: note
 
 
 ---
+2021 YAI Spring Session : https://youtu.be/OoUX-nOEjG0
 <br/>
  
 # 1. Image Classification : A core task in Computer Vision
