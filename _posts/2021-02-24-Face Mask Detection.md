@@ -7,7 +7,7 @@ type: note
 
 
 ---
- 
+2021 YAI Winter Session : Deep Learning ZeroToAll - Toy Project
 <br/>
 # 주제 선정
 
