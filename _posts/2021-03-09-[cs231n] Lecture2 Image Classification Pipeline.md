@@ -8,7 +8,7 @@ type: note
 
 
 ---
-### 2021 YAI Spring Session Week 1 : https://youtu.be/OoUX-nOEjG0
+### 2021 YAI Spring Session Week 1
 
 
 <br/>
