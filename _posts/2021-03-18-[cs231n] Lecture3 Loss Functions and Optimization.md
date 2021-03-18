@@ -15,14 +15,14 @@ type: note
 
 - Loss function tells how good our current classifiers is.
 
-![loss_function.png](_posts/Lecture3 Loss Functions and Optimization bc0668b284e74e6eaa056fffb6939a50/loss_function.png)
+![loss_function.png](/assets/pic/Lecture3 Loss Functions and Optimization/loss_function.png)
 
 - Multiclass SVM Loss : sum over all of categories Y, except for the true categories Y_i
 - s_j: the score of predicted class , s_yi: the score of the true class
 - Safety margin(=1) is set to give a difference between the predicted value and the correct value. → Correct class score must be greater than the other scores than a certain safety margin
 - Max : ∞, min : 0 (all correct)
 
-![svm_loss.png](_posts/Lecture3 Loss Functions and Optimization bc0668b284e74e6eaa056fffb6939a50/svm_loss.png)
+![svm_loss.png](/assets/pic/Lecture3 Loss Functions and Optimization/svm_loss.png)
 
 - At an initialization W is small so all s→0, the loss is "(the number of the classes) - 1"
 - In Multiclass SVM loss, the true value doesn't mean anything. It is important that getting the correct class scores to be greater than  one more the incorrect score.
@@ -33,7 +33,7 @@ type: note
 - Add **penalty(Regularization)** to the loss function to encourages the model to pick a simpler W and prevents the model from overfitting in train data
 - $\lambda$ : regularization strength (hyperparameter)
 
-![regularization.png](_posts/Lecture3 Loss Functions and Optimization bc0668b284e74e6eaa056fffb6939a50/regularization.png)
+![regularization.png](/assets/pic/Lecture3 Loss Functions and Optimization/regularization.png)
 
 ## Commonly used Regularization Form
 
@@ -42,7 +42,7 @@ type: note
 - Elastic Net (L1+L2)
 - Max Norm Regularization, Dropout, Batch Normalization, Stochastic Depth...
 
-![common_used_regularization.png](_posts/Lecture3 Loss Functions and Optimization bc0668b284e74e6eaa056fffb6939a50/common_used_regularization.png)
+![common_used_regularization.png](/assets/pic/Lecture3 Loss Functions and Optimization/common_used_regularization.png)
 
 # Softmax Classifier (Multinomial Logistic Regression)
 
@@ -52,7 +52,7 @@ type: note
 - Max : ∞, min : 0 (all correct)
 - At an initialization W is small so all s→0, the loss is "logC"
 
-![softmax.png](_posts/Lecture3 Loss Functions and Optimization bc0668b284e74e6eaa056fffb6939a50/softmax.png)
+![softmax.png]/assets/pic/Lecture3 Loss Functions and Optimization/softmax.png)
 
 ## Softmax vs. SVM
 
