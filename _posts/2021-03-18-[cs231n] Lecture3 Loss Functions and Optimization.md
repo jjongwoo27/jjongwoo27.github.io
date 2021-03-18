@@ -10,7 +10,6 @@ type: note
 ---
 <br/>
  
-# Lecture3 : Loss Functions and Optimization
 
 # Multiclass SVM Loss
 
