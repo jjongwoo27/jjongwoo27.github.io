@@ -10,7 +10,6 @@ type: note
 ---
 <br/>
 
-# Lecture4 : Backpropagation and Neural Networks
 
 # Backpropagation
 
