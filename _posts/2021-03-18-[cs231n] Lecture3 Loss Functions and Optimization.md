@@ -27,6 +27,8 @@ type: note
 - At an initialization W is small so all s→0, the loss is "(the number of the classes) - 1"
 - In Multiclass SVM loss, the true value doesn't mean anything. It is important that getting the correct class scores to be greater than  one more the incorrect score.
 
+<br/>
+ 
 # Regularization
 
 - In any Loss Function, "W" is not unique. → choose value that fits well in test data
@@ -44,6 +46,8 @@ type: note
 
 ![common_used_regularization.png](/assets/pic/Lecture3 Loss Functions and Optimization/common_used_regularization.png)
 
+<br/>
+ 
 # Softmax Classifier (Multinomial Logistic Regression)
 
 - Endow scores with some additional meaning
@@ -61,6 +65,8 @@ the loss in both cases?
 - SVM : not change
 - Softmax : pile more probability mass on the correct class (sensitive)
 
+<br/>
+ 
 # Optimization
 
 - Ways to find the best "W" (loss → 0)
@@ -95,6 +101,8 @@ while True:
 	weights +- = - step_size * weights_grad # Perform parameter update
 ```
 
+<br/>
+ 
 # Image Features
 
 - Extract features (form of vector) from raw image pixels → **Classifier Model or Neural Network**
