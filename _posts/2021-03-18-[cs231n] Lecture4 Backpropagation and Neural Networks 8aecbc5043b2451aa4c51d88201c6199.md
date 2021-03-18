@@ -1,3 +1,15 @@
+---
+
+date: 2021-03-18 08:30:00 +0900
+categories : [Machine Learning]
+tags: [Study]
+type: note
+
+
+
+---
+<br/>
+
 # Lecture4 : Backpropagation and Neural Networks
 
 # Backpropagation
