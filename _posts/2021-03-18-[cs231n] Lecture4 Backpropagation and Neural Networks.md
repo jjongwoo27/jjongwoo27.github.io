@@ -16,24 +16,24 @@ type: note
 
 - Computational Graph : a directed graph where the nodes correspond to mathematical operations
 
-![Lecture4%20Backpropagation%20and%20Neural%20Networks%208aecbc5043b2451aa4c51d88201c6199/computational_graph.png](Lecture4%20Backpropagation%20and%20Neural%20Networks%208aecbc5043b2451aa4c51d88201c6199/computational_graph.png)
+![computational_graph.png](_posts/Lecture4 Backpropagation and Neural Networks 8aecbc5043b2451aa4c51d88201c6199/computational_graph.png)
 
 - Backpropagation : recursively use the chain rule in order to compute gradient with respect to every variable in the computational graph (useful in complex function)
 - Get the local gradient of the node from the back (using **Chain Rule**)
 
-![Lecture4%20Backpropagation%20and%20Neural%20Networks%208aecbc5043b2451aa4c51d88201c6199/backpropagation.png](Lecture4%20Backpropagation%20and%20Neural%20Networks%208aecbc5043b2451aa4c51d88201c6199/backpropagation.png)
+![backpropagation.png](_posts/Lecture4 Backpropagation and Neural Networks 8aecbc5043b2451aa4c51d88201c6199/backpropagation.png)
 
 ## Example
 
-![Lecture4%20Backpropagation%20and%20Neural%20Networks%208aecbc5043b2451aa4c51d88201c6199/example.png](Lecture4%20Backpropagation%20and%20Neural%20Networks%208aecbc5043b2451aa4c51d88201c6199/example.png)
+![example.png](_posts/Lecture4 Backpropagation and Neural Networks 8aecbc5043b2451aa4c51d88201c6199/example.png)
 
-![Lecture4%20Backpropagation%20and%20Neural%20Networks%208aecbc5043b2451aa4c51d88201c6199/sigmoid_gate.png](Lecture4%20Backpropagation%20and%20Neural%20Networks%208aecbc5043b2451aa4c51d88201c6199/sigmoid_gate.png)
+![sigmoid_gate.png](_posts/Lecture4 Backpropagation and Neural Networks 8aecbc5043b2451aa4c51d88201c6199/sigmoid_gate.png)
 
 - Able to group some of the nodes together into more complex nodes (ex. Sigmoid Gate)
 
 ## Patterns in backward flow
 
-![Lecture4%20Backpropagation%20and%20Neural%20Networks%208aecbc5043b2451aa4c51d88201c6199/patterns.png](Lecture4%20Backpropagation%20and%20Neural%20Networks%208aecbc5043b2451aa4c51d88201c6199/patterns.png)
+![patterns.png](_posts/Lecture4 Backpropagation and Neural Networks 8aecbc5043b2451aa4c51d88201c6199/patterns.png)
 
 - ADD gate : gradient distributor
 - MAX gate : gradient router (only flow through where the gradient come from)
@@ -45,7 +45,7 @@ type: note
 - size : (input size) * (output size) / form : Diagonal Matrix
 - In practice we process an entire minibatch so Jacobian would technically be complex.
 
-![Lecture4%20Backpropagation%20and%20Neural%20Networks%208aecbc5043b2451aa4c51d88201c6199/A_vectorized_example.png](Lecture4%20Backpropagation%20and%20Neural%20Networks%208aecbc5043b2451aa4c51d88201c6199/A_vectorized_example.png)
+![A_vectorized_example.png](_posts/Lecture4 Backpropagation and Neural Networks 8aecbc5043b2451aa4c51d88201c6199/A_vectorized_example.png)
 
 # Modularized Implementation : Forward, Backward API
 
@@ -67,7 +67,7 @@ class MultiplyGate(object):
 
  
 
-![Lecture4%20Backpropagation%20and%20Neural%20Networks%208aecbc5043b2451aa4c51d88201c6199/multiply_gate.png](Lecture4%20Backpropagation%20and%20Neural%20Networks%208aecbc5043b2451aa4c51d88201c6199/multiply_gate.png)
+![multiply_gate.png](_posts/Lecture4 Backpropagation and Neural Networks 8aecbc5043b2451aa4c51d88201c6199/multiply_gate.png)
 
 # Neural Networks
 
@@ -75,10 +75,10 @@ class MultiplyGate(object):
 - Add **Hidden Layer** : perform nonlinear transformations of the inputs entered into the network.
 - Hidden Layer is located between the input and output of the algorithm, in which the function applies weights to the inputs and directs them through an activation function as the output.
 
-![Lecture4%20Backpropagation%20and%20Neural%20Networks%208aecbc5043b2451aa4c51d88201c6199/neural_network.png](Lecture4%20Backpropagation%20and%20Neural%20Networks%208aecbc5043b2451aa4c51d88201c6199/neural_network.png)
+![neural_network.png](_posts/Lecture4 Backpropagation and Neural Networks 8aecbc5043b2451aa4c51d88201c6199/neural_network.png)
 
-![Lecture4%20Backpropagation%20and%20Neural%20Networks%208aecbc5043b2451aa4c51d88201c6199/brain.png](Lecture4%20Backpropagation%20and%20Neural%20Networks%208aecbc5043b2451aa4c51d88201c6199/brain.png)
+![brain.png](_posts/Lecture4 Backpropagation and Neural Networks 8aecbc5043b2451aa4c51d88201c6199/brain.png)
 
 - Example of activation functions
 
-![Lecture4%20Backpropagation%20and%20Neural%20Networks%208aecbc5043b2451aa4c51d88201c6199/activation_function.png](Lecture4%20Backpropagation%20and%20Neural%20Networks%208aecbc5043b2451aa4c51d88201c6199/activation_function.png)
+![activation_function.png](_posts/Lecture4 Backpropagation and Neural Networks 8aecbc5043b2451aa4c51d88201c6199/activation_function.png)
