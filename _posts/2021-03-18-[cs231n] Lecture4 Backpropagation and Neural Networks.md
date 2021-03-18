@@ -38,6 +38,8 @@ type: note
 - MAX gate : gradient router (only flow through where the gradient come from)
 - MIN gate : gradient switcher (lcal gradient is the value of the other variable)
 
+<br/>
+ 
 # Vectorized Operation
 
 - Gradients for vectorized code : Jacobian Matrix!
@@ -46,6 +48,8 @@ type: note
 
 ![A_vectorized_example.png](/assets/pic/Lecture4 Backpropagation and Neural Networks/A_vectorized_example.png)
 
+<br/>
+ 
 # Modularized Implementation : Forward, Backward API
 
 - Forward: compute result of an operation and save any intermediates needed for gradient computation in memory
@@ -68,6 +72,8 @@ class MultiplyGate(object):
 
 ![multiply_gate.png](/assets/pic/Lecture4 Backpropagation and Neural Networks/multiply_gate.png)
 
+<br/>
+ 
 # Neural Networks
 
 - Neural Networks stack layers in a hierarchical way to make up more complex non-linear function
