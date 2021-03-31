@@ -10,8 +10,6 @@ type: note
 ---
 <br/>
 
-# Lecture6 : Training Neural Networks Ⅰ
-
 # Activation Functions
 
 ## Sigmoid : 1/(1+e^(-x))
