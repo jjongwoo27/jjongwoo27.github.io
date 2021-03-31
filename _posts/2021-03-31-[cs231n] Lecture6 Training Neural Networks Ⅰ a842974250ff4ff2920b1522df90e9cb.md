@@ -1,26 +1,38 @@
+---
+
+date: 2021-03-31 08:30:00 +0900
+categories : [Machine Learning]
+tags: [Study]
+type: note
+
+
+
+---
+<br/>
+
 # Lecture6 : Training Neural Networks Ⅰ
 
 # Activation Functions
 
 ## Sigmoid : 1/(1+e^(-x))
 
-![Lecture6%20Training%20Neural%20Networks%20%E2%85%A0%20a842974250ff4ff2920b1522df90e9cb/activation_functions_sigmoid.png](Lecture6%20Training%20Neural%20Networks%20%E2%85%A0%20a842974250ff4ff2920b1522df90e9cb/activation_functions_sigmoid.png)
+![activation_functions_sigmoid.png](/assets/pic/Lecture6 Training Neural Networks Ⅰ a842974250ff4ff2920b1522df90e9cb/activation_functions_sigmoid.png)
 
 - In negative, positive region of the sigmoid, it's essentially flat → gradient = 0(zero) → chain any upstream gradient coming down → multiply by near zero → **get very small gradient (gradient vanishing)**
 - When the input to a neuron is always positive, the gradients on "w" is always all positive or negative ****→ **always move in the same direction (inefficient gradient updates)** → ****why we want **zero-mean data!**
 
-![Lecture6%20Training%20Neural%20Networks%20%E2%85%A0%20a842974250ff4ff2920b1522df90e9cb/zig_zag_path.png](Lecture6%20Training%20Neural%20Networks%20%E2%85%A0%20a842974250ff4ff2920b1522df90e9cb/zig_zag_path.png)
+![zig_zag_path.png](/assets/pic/Lecture6 Training Neural Networks Ⅰ a842974250ff4ff2920b1522df90e9cb/zig_zag_path.png)
 
 ## tanh
 
-![Lecture6%20Training%20Neural%20Networks%20%E2%85%A0%20a842974250ff4ff2920b1522df90e9cb/activation_functions_tanhx.png](Lecture6%20Training%20Neural%20Networks%20%E2%85%A0%20a842974250ff4ff2920b1522df90e9cb/activation_functions_tanhx.png)
+![activation_functions_tanhx.png](/assets/pic/Lecture6 Training Neural Networks Ⅰ a842974250ff4ff2920b1522df90e9cb/activation_functions_tanhx.png)
 
 - "tanh(x) looks very similar to the sigmoid, but it's squashing to the range [-1, 1] → **zero centered**
 - still kill the gradient flow
 
 ## ReLU (Rectified Linear Unit) : max(0, x)
 
-![Lecture6%20Training%20Neural%20Networks%20%E2%85%A0%20a842974250ff4ff2920b1522df90e9cb/activation_functions_ReLU.png](Lecture6%20Training%20Neural%20Networks%20%E2%85%A0%20a842974250ff4ff2920b1522df90e9cb/activation_functions_ReLU.png)
+![activation_functions_ReLU.png](/assets/pic/Lecture6 Training Neural Networks Ⅰ a842974250ff4ff2920b1522df90e9cb/activation_functions_ReLU.png)
 
 - commonly used activation function
 - ReLUs were starting to be used a lot around 2012 (AlexNet)
@@ -29,18 +41,18 @@
 
 ## Leaky ReLU
 
-![Lecture6%20Training%20Neural%20Networks%20%E2%85%A0%20a842974250ff4ff2920b1522df90e9cb/activation_functions_Leaky_ReLU.png](Lecture6%20Training%20Neural%20Networks%20%E2%85%A0%20a842974250ff4ff2920b1522df90e9cb/activation_functions_Leaky_ReLU.png)
+![activation_functions_Leaky_ReLU.png](/assets/pic/Lecture6 Training Neural Networks Ⅰ a842974250ff4ff2920b1522df90e9cb/activation_functions_Leaky_ReLU.png)
 
 - not flat in negative region → slight slope → very computationally efficient
 - doesn't have dying ReLU problem
 
 ## ELU (Exponential Linear Units)
 
-![Lecture6%20Training%20Neural%20Networks%20%E2%85%A0%20a842974250ff4ff2920b1522df90e9cb/activation_functions_ELU.png](Lecture6%20Training%20Neural%20Networks%20%E2%85%A0%20a842974250ff4ff2920b1522df90e9cb/activation_functions_ELU.png)
+![activation_functions_ELU.png](/assets/pic/Lecture6 Training Neural Networks Ⅰ a842974250ff4ff2920b1522df90e9cb/activation_functions_ELU.png)
 
 ## Maxout "Neuron"
 
-![Lecture6%20Training%20Neural%20Networks%20%E2%85%A0%20a842974250ff4ff2920b1522df90e9cb/maxout.png](Lecture6%20Training%20Neural%20Networks%20%E2%85%A0%20a842974250ff4ff2920b1522df90e9cb/maxout.png)
+![maxout.png](/assets/pic/Lecture6 Training Neural Networks Ⅰ a842974250ff4ff2920b1522df90e9cb/maxout.png)
 
 - Does not have the basic form of dot product → nonlinearity
 - Generalizes ReLU and Leaky ReLU
@@ -65,7 +77,7 @@
 
 - Initialization is important because the learning process may vary depending on **how you set the starting value of Weight**
 
-![Lecture6%20Training%20Neural%20Networks%20%E2%85%A0%20a842974250ff4ff2920b1522df90e9cb/activation_statistics.png](Lecture6%20Training%20Neural%20Networks%20%E2%85%A0%20a842974250ff4ff2920b1522df90e9cb/activation_statistics.png)
+![activation_statistics.png](/assets/pic/Lecture6 Training Neural Networks Ⅰ a842974250ff4ff2920b1522df90e9cb/activation_statistics.png)
 
 ## First Idea: Small random numbers
 
@@ -79,11 +91,11 @@ W = 0.01*np.random.randn(D,H)
 
 ### Example : Small Random Number
 
-![Lecture6%20Training%20Neural%20Networks%20%E2%85%A0%20a842974250ff4ff2920b1522df90e9cb/activation_zero.png](Lecture6%20Training%20Neural%20Networks%20%E2%85%A0%20a842974250ff4ff2920b1522df90e9cb/activation_zero.png)
+![activation_zero.png](/assets/pic/Lecture6 Training Neural Networks Ⅰ a842974250ff4ff2920b1522df90e9cb/activation_zero.png)
 
 ### Example : 1
 
-![Lecture6%20Training%20Neural%20Networks%20%E2%85%A0%20a842974250ff4ff2920b1522df90e9cb/activation_one.png](Lecture6%20Training%20Neural%20Networks%20%E2%85%A0%20a842974250ff4ff2920b1522df90e9cb/activation_one.png)
+![activation_one.png](/assets/pic/Lecture6 Training Neural Networks Ⅰ a842974250ff4ff2920b1522df90e9cb/activation_one.png)
 
 ## Xavier Initialization
 
@@ -101,7 +113,7 @@ W= np.random.ramdn(fan_in, fan_out) / np.sqrt(fan_in) # layer initalization
 W= np.random.ramdn(fan_in, fan_out) / np.sqrt(fan_in/2) # layer initalization
 ```
 
-![Lecture6%20Training%20Neural%20Networks%20%E2%85%A0%20a842974250ff4ff2920b1522df90e9cb/He_initialization.png](Lecture6%20Training%20Neural%20Networks%20%E2%85%A0%20a842974250ff4ff2920b1522df90e9cb/He_initialization.png)
+![He_initialization.png](/assets/pic/Lecture6 Training Neural Networks Ⅰ a842974250ff4ff2920b1522df90e9cb/He_initialization.png)
 
 # Batch Normalization
 
@@ -110,7 +122,7 @@ W= np.random.ramdn(fan_in, fan_out) / np.sqrt(fan_in/2) # layer initalization
 - **inserted after FC or Convolutional layers, and before nonlinearity**
 - the distribution of inputs to the layer constantly readjust to new distributions
 
-![Lecture6%20Training%20Neural%20Networks%20%E2%85%A0%20a842974250ff4ff2920b1522df90e9cb/batch_normalization.png](Lecture6%20Training%20Neural%20Networks%20%E2%85%A0%20a842974250ff4ff2920b1522df90e9cb/batch_normalization.png)
+![batch_normalization.png](/assets/pic/Lecture6 Training Neural Networks Ⅰ a842974250ff4ff2920b1522df90e9cb/batch_normalization.png)
 
 ## Note
 
@@ -150,11 +162,11 @@ W= np.random.ramdn(fan_in, fan_out) / np.sqrt(fan_in/2) # layer initalization
 - Grid layout : only able to some values, have missed where were the good regions
 - Random Layout : get much more useful signal overall (have more samples of different values of the important variable)
 
-![Lecture6%20Training%20Neural%20Networks%20%E2%85%A0%20a842974250ff4ff2920b1522df90e9cb/search.png](Lecture6%20Training%20Neural%20Networks%20%E2%85%A0%20a842974250ff4ff2920b1522df90e9cb/search.png)
+![search.png](/assets/pic/Lecture6 Training Neural Networks Ⅰ a842974250ff4ff2920b1522df90e9cb/search.png)
 
 ## Monitor and visualize the loss curve
 
-![Lecture6%20Training%20Neural%20Networks%20%E2%85%A0%20a842974250ff4ff2920b1522df90e9cb/loss_curve.png](Lecture6%20Training%20Neural%20Networks%20%E2%85%A0%20a842974250ff4ff2920b1522df90e9cb/loss_curve.png)
+![loss_curve.png](/assets/pic/Lecture6 Training Neural Networks Ⅰ a842974250ff4ff2920b1522df90e9cb/loss_curve.png)
 
 - The gap between training accuracy and validation accuracy is high? → might have **overfitting** → increase regularization strength
     - low? → increase model capacity
