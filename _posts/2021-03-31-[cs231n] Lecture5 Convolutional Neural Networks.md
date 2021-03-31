@@ -10,7 +10,6 @@ type: note
 ---
 <br/>
 
-# Lecture5 : Convolutional Neural Networks
 
 # Convolution Layer
 
