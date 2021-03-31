@@ -9,7 +9,6 @@ type: note
 
 ---
 <br/>
-# Lecture7 : Training Neural Networks Ⅱ
 
 # Optimization: Problems with SGD
 
