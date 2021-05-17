@@ -1,3 +1,13 @@
+---
+date: 2021-05-17 11:00:00 +0900
+categories : [Machine Learning]
+tags: [Assignment]
+type: note
+
+
+
+---
+
 ```python
 import requests
 import pandas as pd
